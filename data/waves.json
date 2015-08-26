@@ -1,0 +1,17 @@
+[
+  {
+    "name" : "Steamer Lane",
+    "location" : "Santa Cruz, CA.",
+    "waveType" : "Reef/Pointbreak"
+  },
+  {
+    "name" : "Rincon",
+    "location" : "Carpenteria, CA.",
+    "waveType" : "Pointbreak"
+  },
+  {
+    "name" : "Trestles",
+    "location" : "San Clemente, CA.",
+    "waveType" : "Reef"
+  }
+]

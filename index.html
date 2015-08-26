@@ -1,0 +1,38 @@
+<!Doctype html>
+<html ng-app="waveList">
+<head>
+  <title>Profile Builder</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body ng-controller="waveCtrl">
+  <section class="main">
+    <ul id="waves">
+      <li ng-repeat="wave in waves" ng-class="waves.name">
+        <span class="name">{{wave.name}}</span>
+        <span class="location">{{wave.location}}</span>
+        <span class="wave-type">{{wave.waveType}}</span>
+        <button ng-click="edit(wave)">Edit</button>
+        <button ng-click="remove(wave)">Remove</button>
+      </li>
+    </ul>
+    <button ng-click="add()">Add</button>
+    <form class="input-fields">
+      <label>
+        Name:
+        <input type="text" ng-model="editingWave.name"/>
+      </label>
+      <label>
+        Location:
+        <input type="text" ng-model="editingWave.location"/>
+      </label>
+      <label>
+        Wave Type:
+        <input type="text" ng-model="editingWave.waveType"/>
+      </label>
+    </form>
+  </section>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
