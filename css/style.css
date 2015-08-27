@@ -1,4 +1,35 @@
-.done-true {
-  text-decoration: line-through;
-  color: grey;
+html, body {
+  width: 100%;
+}
+
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+body#wave-admin > section#wave-details > div#waves > ul {
+  width: 80%;
+  margin: 2em auto;
+}
+
+body#wave-admin > section#wave-details > div#waves > ul > li {
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+body#wave-admin > section#wave-details > div#waves > ul > li,
+body#wave-admin > section#wave-details > div#waves > ul > div.edit-input {
+  font-size: 1.4em;
+  margin: .5rem;
+}
+
+body#wave-admin > section#wave-details > div#waves > ul > div.edit-input {
+  float: right;
+  display: inline-block;
+}
+
+body#wave-admin > section#wave-details > div#waves > ul > button {
+  display: block;
+  clear: both;
 }

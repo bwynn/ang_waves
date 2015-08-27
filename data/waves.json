@@ -1,17 +1,44 @@
 [
   {
+    "city" : "Santa Cruz",
+    "description" : "Description information data being passed in",
+    "maxSize" : "Max wave size",
+    "minSize" : "Min wave size",
     "name" : "Steamer Lane",
-    "location" : "Santa Cruz, CA.",
-    "waveType" : "Reef/Pointbreak"
+    "swellDirection" : "Swell direction",
+    "swellPeriod" : "Swell period",
+    "tide" : "Tide data displayed here",
+    "waterTemp" : "Water temp",
+    "waveType" : "Reef/Pointbreak",
+    "windDirection" : "Wind direction",
+    "windSpeed" : "Wind speed"
   },
   {
+    "city" : "Carpenteria",
+    "description" : "Description information data being passed in",
+    "maxSize" : "Max wave size",
+    "minSize" : "Min wave size",
     "name" : "Rincon",
-    "location" : "Carpenteria, CA.",
-    "waveType" : "Pointbreak"
+    "swellDirection" : "Swell direction",
+    "swellPeriod" : "Swell period",
+    "tide" : "Tide data displayed here",
+    "waterTemp" : "Water temp",
+    "waveType" : "Pointbreak",
+    "windDirection" : "Wind direction",
+    "windSpeed" : "Wind speed"
   },
   {
+    "city" : "San Clemente",
+    "description" : "Description information data being passed in",
+    "maxSize" : "Max wave size",
+    "minSize" : "Min wave size",
     "name" : "Trestles",
-    "location" : "San Clemente, CA.",
-    "waveType" : "Reef"
+    "swellDirection" : "Swell direction",
+    "swellPeriod" : "Swell period",
+    "tide" : "Tide data displayed here",
+    "waterTemp" : "Water temp",
+    "waveType" : "Cobblestone reef",
+    "windDirection" : "Wind direction",
+    "windSpeed" : "Wind speed"
   }
 ]
