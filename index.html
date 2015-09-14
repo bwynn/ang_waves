@@ -1,56 +1,17 @@
-<!Doctype html>
-<html ng-app="waveList">
+<!doctype html>
+<html>
 <head>
-  <title>Profile Builder</title>
+  <title>the conditions</title>
   <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/gallery.style.css"/>
+  <link rel="stylesheet" href="css/dashboard.style.css"/>
+  <link rel="stylesheet" href="css/overview.style.css"/>
 </head>
-<body id="wave-admin">
-  <section id="wave-details" ng-controller="waveCtrl">
-    <div id="waves">
-      <ul ng-repeat="wave in waves">
-
-        <li class="name">Wave Name: {{wave.name}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.name"/></div>
-
-        <li class="location">City: {{wave.city}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.city"/></div>
-
-        <li class="wave-type">Wave Type: {{wave.waveType}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.waveType"/></div>
-
-        <li class="description">Description: {{wave.description}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.description"/></div>
-
-        <li class="max-size">Max Size: {{wave.maxSize}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.maxSize"/></div>
-
-        <li class="min-size">Minimum Size: {{wave.minSize}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.minSize"/></div>
-
-        <li class="swell-direction">Swell Direction: {{wave.swellDirection}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.swellDirection"/></div>
-
-        <li class="swell-period">Swell Period: {{wave.swellPeriod}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.swellPeriod"/></div>
-
-        <li class="tide">Tide: {{wave.tide}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.tide"/></div>
-
-        <li class="water-temp">Water Temperature: {{wave.waterTemp}}</li>
-
-        <li class="wind-direction">Wind Direction: {{wave.windDirection}}</li>
-        <div class="edit-input"><input type="text" ng-model="editingWave.windDirection"/></div>
-
-        <li class="wind-speed">Wind Speed: {{wave.windSpeed}}</li>
-
-        <button ng-click="edit(wave)">Edit</button>
-        <button ng-click="remove(wave)">Remove</button>
-      </ul>
-    </div>
-    <button ng-click="add()">Add</button>
-  </section>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+<body>
+  <div class="outer-wrap">
+    <div id="gallery-module" class="flex flex-stretch-items module"></div>
+    <div id="dashboard-module" class="flex flex-stretch-items module"></div>
+    <div id="overview-module" class="flex flex-stretch-items module"></div>
+  </div>
 </body>
 </html>

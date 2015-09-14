@@ -1,35 +1,83 @@
 html, body {
+  height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-size: 18px;
-  font-family: sans-serif;
+  font-size: 20px;
 }
 
-body#wave-admin > section#wave-details > div#waves > ul {
-  width: 80%;
-  margin: 2em auto;
+div.outer-wrap {
+  height: inherit;
+  width: inherit;
+  box-sizing: border-box;
+  padding: 1em;
 }
 
-body#wave-admin > section#wave-details > div#waves > ul > li {
-  display: block;
+.module {
+  flex-grow: 1;
+  min-height: 10em;
+  height: 66%;
   width: 50%;
-  float: left;
 }
 
-body#wave-admin > section#wave-details > div#waves > ul > li,
-body#wave-admin > section#wave-details > div#waves > ul > div.edit-input {
-  font-size: 1.4em;
-  margin: .5rem;
+.module:last-child {
+  flex-grow: 2;
+  height: 33%;
+  width: 100%;
 }
 
-body#wave-admin > section#wave-details > div#waves > ul > div.edit-input {
-  float: right;
-  display: inline-block;
+.flex {
+  display: -webkit-flex;
+  display: ms-flexbox;
+  display: flex;
 }
 
-body#wave-admin > section#wave-details > div#waves > ul > button {
-  display: block;
-  clear: both;
+.flex-row-wrap {
+  -webkit-flex-flow: row;
+  flex-flow: row;
+}
+
+.flex-stretch-items {
+  -webkit-align-items: stretch;
+  align-items: stretch;
+}
+
+.flex-stretch-content {
+  -webkit-align-content: stretch;
+  align-content: stretch;
+}
+
+@media only screen and (max-width: 800px) {
+  div.outer-wrap {
+    padding: 0;
+  }
+
+  .module {
+    width: 100%;
+  }
+
+  .module, .module:last-child {
+    height: 70%;
+  }
+
+  .module:last-child {
+    flex-grow: 1;
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .module {
+    height: 50%;
+    width: 100%;
+  }
+
+  .module:last-child {
+    flex-grow: 1;
+    height: 50%;
+    width: inherit;
+  }
 }
