@@ -29,6 +29,8 @@ div.outer-wrap {
   width: 100%;
 }
 
+/* ========================== FLEX CLASSES ================================== */
+
 .flex {
   display: -webkit-flex;
   display: ms-flexbox;
@@ -36,8 +38,23 @@ div.outer-wrap {
 }
 
 .flex-row-wrap {
-  -webkit-flex-flow: row;
-  flex-flow: row;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.flex-row {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-column {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-end {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .flex-stretch-items {
@@ -49,6 +66,8 @@ div.outer-wrap {
   -webkit-align-content: stretch;
   align-content: stretch;
 }
+
+/* ========================== MEDIA QUERIES ================================= */
 
 @media only screen and (max-width: 800px) {
   div.outer-wrap {

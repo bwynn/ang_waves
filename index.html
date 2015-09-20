@@ -3,14 +3,34 @@
 <head>
   <title>the conditions</title>
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="stylesheet" href="css/gallery.style.css"/>
-  <link rel="stylesheet" href="css/dashboard.style.css"/>
-  <link rel="stylesheet" href="css/overview.style.css"/>
+  <link rel="stylesheet" href="gallery/gallery.style.css"/>
+  <link rel="stylesheet" href="dashboard/dashboard.style.css"/>
+  <link rel="stylesheet" href="overview/overview.style.css"/>
 </head>
 <body>
   <div class="outer-wrap">
-    <div id="gallery-module" class="flex flex-stretch-items module"></div>
-    <div id="dashboard-module" class="flex flex-stretch-items module"></div>
+
+    <!-- gallery module template -->
+    <div id="gallery-module" class="flex flex-column flex-stretch-items module">
+      <div class="gallery-wrap"></div>
+      <div class="gallery-control"></div>
+    </div>
+
+    <!-- dashboard module template -->
+    <div id="dashboard-module" class="flex flex-stretch-items module">
+      <div class="conditions-container flex flex-column">
+        <div class="swell-data flex flex-column flex-end">
+          <div class="swell-direction"></div>
+          <div class="swell-period"></div>
+        </div>
+        <div class="weather-data"></div>
+        <div class="tide-data"></div>
+        <div class="wind-data"></div>
+      </div>
+      <div class="profile-container flex flex-row"></div>
+    </div>
+
+    <!-- overview module template -->
     <div id="overview-module" class="flex flex-stretch-items module"></div>
   </div>
 </body>

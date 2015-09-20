@@ -1,0 +1,39 @@
+#dashboard-module {
+  background-color: steelblue;
+}
+
+/* ================ CONDITIONS CONTAINER STYLES ============================= */
+
+#dashboard-module .conditions-container {
+  height: 100%;
+  width: 66%;
+  background-color: #444;
+}
+
+#dashboard-module .conditions-container > div {
+  height: 25%;
+  width: 100%;
+}
+
+#dashboard-module .conditions-container > div:nth-child(even) {
+  background-color: #666;
+}
+
+#dashboard-module .conditions-container > div.swell-data > div {
+  width: 50%;
+  height: 50%;
+  border-left: 1px solid #999;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+}
+
+#dashboard-module .conditions-container > div.swell-data > div:nth-child(even) {
+  background-color: #777;
+}
+
+/* ================ PROFILE CONTAINER STYLES ================================ */
+
+#dashboard-module .profile-container {
+  width: 35%;
+  background-color: #555;
+}
